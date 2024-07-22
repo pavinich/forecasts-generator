@@ -55,9 +55,9 @@ forecastBtn.addEventListener('click', function() {
     const probability = getRandomInt(0, 101);
 
     currentText.textContent = forecastText;
-    currentPercent.textContent = `${probability}% `;
+    currentPercent.textContent = `${probability} % `;
 
-    const newTemplate = makeNewTemplate(forecastText, `${probability}% `);
+    const newTemplate = makeNewTemplate(forecastText, `${probability} %`);
     forecastList.prepend(newTemplate);
 });
 
